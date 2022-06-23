@@ -1,5 +1,5 @@
-import Button from "../../../components/Atoms/Button";
-import Field from "../../../components/Atoms/Field";
+import Button from "../../../components/atoms/Button";
+import Field from "../../../components/atoms/Field";
 import { LoginFormProps } from "./LoginForm.models";
 
 const LoginForm = (props: LoginFormProps) => {

@@ -1,5 +1,5 @@
-import Button from "../../../components/Atoms/Button";
-import Field from "../../../components/Atoms/Field";
+import Button from "../../../components/atoms/Button";
+import Field from "../../../components/atoms/Field";
 import { useValidPassword, useValidEmail } from "../../../hooks/validation";
 import { SignUpFormProps } from "./SignUpForm.models";
 
