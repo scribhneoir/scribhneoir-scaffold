@@ -1,0 +1,39 @@
+import { Canvas, Story, Meta, ArgsTable } from "@storybook/addon-docs";
+
+import Text from "./Text";
+
+<Meta
+  title="Atoms/Text"
+  argTypes={{ onChange: { action: "textChanged" } }}
+  component={Text}
+/>
+
+export const Template = (args) => <Text {...args} />;
+
+# Text
+
+<Canvas>
+  <Story name="Text" args={{ children: "Text" }}>
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Italic"
+    args={{
+      children: "Text",
+      bold: true,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Bold"
+    args={{
+      children: "Text",
+      italic: true,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<ArgsTable of={Text} />
