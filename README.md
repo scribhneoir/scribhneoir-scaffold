@@ -1,3 +1,5 @@
+![](./src/assets/scribhneoir.png)
+
 # Scribhneoir Scaffold
 
 The Scribhneoir Scaffold project is an opinionated React project template utilizing modern frontend tooling.
