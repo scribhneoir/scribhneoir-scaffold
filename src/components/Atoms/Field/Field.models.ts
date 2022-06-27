@@ -1,4 +1,5 @@
 export type FieldProps = {
+  ariaLabel?: string;
   error?: string;
   value?: string;
   placeholder?: string;

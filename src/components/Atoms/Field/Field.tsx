@@ -3,7 +3,8 @@ import { IoIosWarning } from 'react-icons/io';
 import Text from '../Text';
 import { FieldProps } from './Field.models';
 const Field = (props: FieldProps) => {
-  const { onChange, value, placeholder, disabled, error, type } = props;
+  const { onChange, value, placeholder, disabled, error, type, ariaLabel } =
+    props;
   return (
     <div className='container flex flex-col'>
       <input
@@ -22,6 +23,7 @@ const Field = (props: FieldProps) => {
         readOnly={disabled}
         disabled={disabled}
         type={type}
+        aria-label={ariaLabel}
       />
       {error && (
         <div className='justify-end px-4 flex flex-row items-center'>
