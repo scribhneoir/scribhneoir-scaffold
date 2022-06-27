@@ -21,7 +21,7 @@ const SignUpForm = (props: SignUpFormProps) => {
   const [passwordError] = useValidPassword(password);
   const [emailError] = useValidEmail(email);
   return (
-    <>
+    <div aria-label='signUpForm'>
       <Field
         onChange={setFirst}
         value={first}
@@ -60,6 +60,7 @@ const SignUpForm = (props: SignUpFormProps) => {
           onClick={() => {
             setSignUp(false);
           }}
+          ariaLabel='formToggle'
         >
           Login
         </Button>
@@ -72,7 +73,7 @@ const SignUpForm = (props: SignUpFormProps) => {
           Sign Up
         </Button>
       </div>
-    </>
+    </div>
   );
 };
 

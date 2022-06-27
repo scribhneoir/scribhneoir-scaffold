@@ -17,7 +17,7 @@ const Login = (props: LoginProps) => {
   const signUpSubmit = async () => {};
   const loginSubmit = async () => {};
   return (
-    <>
+    <div aria-label='login'>
       <div className='flex flex-row mr-auto  my-2'>
         <Header>Login</Header>
       </div>
@@ -48,7 +48,7 @@ const Login = (props: LoginProps) => {
           />
         )}
       </Card>
-    </>
+    </div>
   );
 };
 
