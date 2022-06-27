@@ -1,13 +1,13 @@
-import { Route, Switch } from "react-router-dom";
-import { Provider } from "jotai";
+import { Route, Switch } from 'react-router-dom';
+import { Provider } from 'jotai';
 
-import Login from "./pages/Login";
+import Login from './pages/Login';
 
 function App() {
   return (
     <Provider>
       <Switch>
-        <Route path="/">
+        <Route path='/'>
           <Login />
         </Route>
       </Switch>

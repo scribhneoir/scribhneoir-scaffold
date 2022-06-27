@@ -1,6 +1,7 @@
-# <img src="./src/assets/scribhneoir.png" alt="logo" width="50"/>Scribhneoir Scaffold
+# <img src="./src/assets/scribhneoir.png" alt="logo" width="30"/>Scribhneoir Scaffold
 
-The Scribhneoir Scaffold project is an opinionated React project template utilizing modern frontend tooling.
+The Scribhneoir Scaffold project is an opinionated React project template
+utilizing modern frontend tooling.
 
 Major dependancies:
 
@@ -14,13 +15,15 @@ Major dependancies:
 - React Router (app routing)
 - Storybook (component documentation)
 
-The scaffold includes a login page under `src/pages` and several basic components in `src/components/atoms`. These components should be used as a guide and as a starting point.
+The scaffold includes a login page under `src/pages` and several basic
+components in `src/components/atoms`.
 
-This project does not currently include a structure or dependancies for backend REST API calls or GraphQL queries. It is recomended that you place all service functions inside a services folder within `src/`
+This project does not currently include a structure or dependancies for backend
+REST API calls or GraphQL queries.
 
 ## Project setup
 
-Fork the react-scaffold project:
+Fork the scribhneoir-scaffold project:
 
 `git fork https://github.com/scribhneoir/scribhneoir-scaffold.git`
 

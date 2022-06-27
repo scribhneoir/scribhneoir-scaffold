@@ -1,10 +1,10 @@
-import { ComponentMeta, Story } from "@storybook/react";
+import { ComponentMeta, Story } from '@storybook/react';
 
-import Login from "./Login";
-import { LoginProps } from "./Login.models";
+import Login from './Login';
+import { LoginProps } from './Login.models';
 
 export default {
-  title: "Pages/Login",
+  title: 'Pages/Login',
   component: Login,
 } as ComponentMeta<typeof Login>;
 

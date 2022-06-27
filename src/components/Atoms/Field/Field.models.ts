@@ -3,6 +3,6 @@ export type FieldProps = {
   value?: string;
   placeholder?: string;
   disabled?: boolean;
-  type?: "text" | "password" | "email" | "number" | "tel" | "url";
+  type?: 'text' | 'password' | 'email' | 'number' | 'tel' | 'url';
   onChange: (value: string) => void;
 };

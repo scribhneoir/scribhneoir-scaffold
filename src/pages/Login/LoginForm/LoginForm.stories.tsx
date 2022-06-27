@@ -1,10 +1,10 @@
-import { ComponentMeta, Story } from "@storybook/react";
+import { ComponentMeta, Story } from '@storybook/react';
 
-import LoginForm from "./LoginForm";
-import { LoginFormProps } from "./LoginForm.models";
+import LoginForm from './LoginForm';
+import { LoginFormProps } from './LoginForm.models';
 
 export default {
-  title: "Pages/Login/Forms/LoginForm",
+  title: 'Pages/Login/Forms/LoginForm',
   component: LoginForm,
 } as ComponentMeta<typeof LoginForm>;
 

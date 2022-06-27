@@ -1,4 +1,4 @@
-import { CardProps } from "./Card.models";
+import { CardProps } from './Card.models';
 const Card = (props: CardProps) => {
   const { children } = props;
 

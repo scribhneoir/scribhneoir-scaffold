@@ -1,26 +1,30 @@
-import Text from "../Text";
-import { HeaderProps } from "./Header.models";
-import { TextSizeType } from "../Text/Text.models";
+import Text from '../Text';
+import { HeaderProps } from './Header.models';
+import { TextSizeType } from '../Text/Text.models';
 
 const Header = (props: HeaderProps) => {
   const { children, color, h } = props;
-  let size: TextSizeType = "text-4xl";
+  let size: TextSizeType = 'text-4xl';
   switch (h) {
     case 1:
-      size = "text-4xl md:text-5xl";
+      size = 'text-4xl md:text-5xl';
       break;
     case 2:
-      size = "text-2xl md:text-3xl";
+      size = 'text-2xl md:text-3xl';
       break;
     case 3:
-      size = "text-xl md:text-2xl";
+      size = 'text-xl md:text-2xl';
       break;
     default:
-      size = "text-4xl md:text-5xl";
+      size = 'text-4xl md:text-5xl';
   }
 
   return (
-    <Text color={color} bold size={size}>
+    <Text
+      color={color}
+      bold
+      size={size}
+    >
       {children}
     </Text>
   );

@@ -1,10 +1,10 @@
-import { Canvas, Story, Meta, ArgsTable } from "@storybook/addon-docs";
+import { Canvas, Story, Meta, ArgsTable } from '@storybook/addon-docs';
 
-import Header from "./Header";
+import Header from './Header';
 
 <Meta
-  title="Atoms/Header"
-  argTypes={{ onChange: { action: "HeaderChanged" } }}
+  title='Atoms/Header'
+  argTypes={{ onChange: { action: 'HeaderChanged' } }}
   component={Header}
 />
 
@@ -13,22 +13,25 @@ export const Template = (args) => <Header {...args} />;
 # Header
 
 <Canvas>
-  <Story name="Header" args={{ children: "Header" }}>
+  <Story
+    name='Header'
+    args={{ children: 'Header' }}
+  >
     {Template.bind({})}
   </Story>
   <Story
-    name="H2"
+    name='H2'
     args={{
-      children: "Header",
+      children: 'Header',
       h: 2,
     }}
   >
     {Template.bind({})}
   </Story>
   <Story
-    name="H3"
+    name='H3'
     args={{
-      children: "Header",
+      children: 'Header',
       h: 3,
     }}
   >

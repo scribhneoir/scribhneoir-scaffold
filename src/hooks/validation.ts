@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
 export const useValidEmail = (email: string) => {
   const [valid, setValid] = useState<string | undefined>(undefined);
@@ -7,7 +7,7 @@ export const useValidEmail = (email: string) => {
     setValid(
       /^[^\s@]+@([^\s@.,]+\.)+[^\s@.,]{2,}$/.test(email) || !email
         ? undefined
-        : "please enter a valid email"
+        : 'please enter a valid email'
     );
   }, [email]);
 
@@ -22,11 +22,11 @@ export const useValidPassword = (password: string) => {
       !password
         ? undefined
         : password.length < 8
-        ? "password must be longer than 8 characters"
+        ? 'password must be longer than 8 characters'
         : !/[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/.test(password)
-        ? "password must contain a special character"
+        ? 'password must contain a special character'
         : !/[0-9]/.test(password)
-        ? "password must contain a number"
+        ? 'password must contain a number'
         : undefined
     );
   }, [password]);

@@ -1,10 +1,10 @@
-import { ComponentMeta, Story } from "@storybook/react";
+import { ComponentMeta, Story } from '@storybook/react';
 
-import SignUpForm from "./SignUpForm";
-import { SignUpFormProps } from "./SignUpForm.models";
+import SignUpForm from './SignUpForm';
+import { SignUpFormProps } from './SignUpForm.models';
 
 export default {
-  title: "Pages/Login/Forms/Sign Up Form",
+  title: 'Pages/Login/Forms/Sign Up Form',
   component: SignUpForm,
 } as ComponentMeta<typeof SignUpForm>;
 
