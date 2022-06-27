@@ -1,21 +1,13 @@
-import { beforeEach, describe, expect, test } from 'vitest';
+import { afterEach, beforeEach, describe, expect, test, vi } from 'vitest';
 import { fireEvent, render, screen } from '@testing-library/react';
 
 import Button from './index';
 
-const onClickFake = () => {};
+const onClickFake = vi.fn(() => {});
 
 describe('Atoms/Button', () => {
   beforeEach(() => {
-    render(
-      <Button
-        onClick={() => {
-          return 'hi';
-        }}
-      >
-        hello world
-      </Button>
-    );
+    render(<Button onClick={onClickFake}>hello world</Button>);
   });
 
   test('Render Button', () => {
@@ -23,7 +15,11 @@ describe('Atoms/Button', () => {
   });
 
   test('Click Button', () => {
-    fireEvent.click(screen.getByRole('button'));
-    expect(onClickFake).toBeCalled();
+    console.log(fireEvent.click(screen.getByRole('button')));
+    expect(onClickFake).toHaveBeenCalled();
+  });
+
+  afterEach(() => {
+    vi.restoreAllMocks();
   });
 });
