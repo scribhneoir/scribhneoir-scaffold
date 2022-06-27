@@ -1,7 +1,7 @@
 import { TextProps } from './Text.models';
 
 const Text = (props: TextProps) => {
-  const { children, bold, color, size, italic } = props;
+  const { children, bold, color, size, italic, ariaLabel } = props;
   return (
     <p
       className={` text-center
@@ -9,6 +9,7 @@ const Text = (props: TextProps) => {
         ${bold ? 'font-black' : 'font-medium'}
         ${italic ? 'italic' : 'non-italic'}
         ${size ? size : 'text-base'}`}
+      aria-label={ariaLabel}
     >
       {children}
     </p>

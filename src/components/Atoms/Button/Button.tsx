@@ -1,7 +1,7 @@
 import Text from '../Text';
 import { ButtonProps } from './Button.models';
 const Button = (props: ButtonProps) => {
-  const { primary, children, onClick, icon, light } = props;
+  const { primary, children, onClick, icon, light, ariaLabel } = props;
   return (
     <button
       className={`
@@ -19,6 +19,7 @@ const Button = (props: ButtonProps) => {
       onClick={() => {
         onClick();
       }}
+      aria-label={ariaLabel}
     >
       <Text
         bold={primary}

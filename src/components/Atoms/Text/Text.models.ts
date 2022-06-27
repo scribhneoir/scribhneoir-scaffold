@@ -19,4 +19,5 @@ export type TextProps = {
   italic?: boolean;
   color?: string;
   size?: TextSizeType;
+  ariaLabel?: string;
 };

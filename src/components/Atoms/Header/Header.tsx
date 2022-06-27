@@ -3,7 +3,7 @@ import { HeaderProps } from './Header.models';
 import { TextSizeType } from '../Text/Text.models';
 
 const Header = (props: HeaderProps) => {
-  const { children, color, h } = props;
+  const { children, color, h, ariaLabel } = props;
   let size: TextSizeType = 'text-4xl';
   switch (h) {
     case 1:
@@ -24,6 +24,7 @@ const Header = (props: HeaderProps) => {
       color={color}
       bold
       size={size}
+      ariaLabel={ariaLabel}
     >
       {children}
     </Text>
